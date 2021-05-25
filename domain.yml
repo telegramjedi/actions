@@ -47,6 +47,14 @@ responses:
   utter_awesome:
     - text: "Awesome! You can ask me things like \"Find me some concerts\" or \"What's a good venue\""
 
+forms:
+  usuario_form:
+    required_slots:
+        resposta:
+          - type: from_entity
+            entity: resposta
+
+
 actions:
   - action_search_concerts
   - action_search_venues
